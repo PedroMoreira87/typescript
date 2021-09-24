@@ -1,2 +1,2 @@
-# typescript
-Getting Started with TypeScript.
+# typescript-angular
+Getting Started with TypeScript and Angular.
