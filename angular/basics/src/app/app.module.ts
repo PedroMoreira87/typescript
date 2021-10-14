@@ -9,19 +9,19 @@ import {SuccessAlertComponent} from './success-alert/success-alert.component';
 import {FormsModule} from "@angular/forms";
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ServerComponent,
-    ServersComponent,
-    WarningAlertComponent,
-    SuccessAlertComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        ServerComponent,
+        ServersComponent,
+        WarningAlertComponent,
+        SuccessAlertComponent
+    ],
+    imports: [
+        BrowserModule,
+        FormsModule
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
 export class AppModule {
 }

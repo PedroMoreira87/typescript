@@ -3,24 +3,24 @@ import {UserService} from './user.service';
 import {Subscription} from 'rxjs';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit , OnDestroy{
-  userActivate = false;
-  private activatedSub: Subscription
+export class AppComponent implements OnInit, OnDestroy {
+    userActivate = false;
+    private activatedSub: Subscription
 
-  constructor(private userService: UserService) {
-  }
+    constructor(private userService: UserService) {
+    }
 
-  ngOnInit() {
-    this.userService.activateEmitter.subscribe(didActivate => {
-      this.userActivate = didActivate;
-    });
-  }
+    ngOnInit() {
+        this.userService.activateEmitter.subscribe(didActivate => {
+            this.userActivate = didActivate;
+        });
+    }
 
-  ngOnDestroy(): void {
-    this.activatedSub.unsubscribe();
-  }
+    ngOnDestroy(): void {
+        this.activatedSub.unsubscribe();
+    }
 }
