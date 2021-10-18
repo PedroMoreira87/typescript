@@ -3,7 +3,16 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-    production: false
+    production: false,
+    firebaseConfig: {
+        apiKey: 'AIzaSyCmVObKa2RhzJF7CHuHZs7vStAdXdyoWZE',
+        authDomain: 'ng-course-recipe-book-d5b11.firebaseapp.com',
+        databaseURL: 'https://ng-course-recipe-book-d5b11-default-rtdb.firebaseio.com',
+        projectId: 'ng-course-recipe-book-d5b11',
+        storageBucket: 'ng-course-recipe-book-d5b11.appspot.com',
+        messagingSenderId: '391665193678',
+        appId: '1:391665193678:web:8c0dae8e355572322f369f'
+    }
 };
 
 /*
