@@ -9,11 +9,11 @@
             <hr>
             <ul class="list-group">
                 <li
-                        class="list-group-item"
-                        *ngFor="let server of servers | filter:filteredStatus:'status' | sort:'name'"
-                        [ngClass]="getStatusClasses(server)">
+                    class="list-group-item"
+                    *ngFor="let server of servers | filter:filteredStatus:'status' | sort:'name'"
+                    [ngClass]="getStatusClasses(server)">
           <span
-                  class="badge">
+              class="badge">
             {{ server.status }}
           </span>
                     <strong>{{ server.name | shorten:15 }}</strong> |

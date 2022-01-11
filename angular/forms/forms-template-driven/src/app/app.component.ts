@@ -46,10 +46,10 @@ export class AppComponent {
 
     onSubmit() {
         this.submitted = true;
-        this.user.username = this.signupForm.value.userData.username;
+        this.user.username = this.signupForm.value.userData.username; // userData is the form group name
         this.user.email = this.signupForm.value.userData.email;
         this.user.secretQuestion = this.signupForm.value.secret;
-        this.user.answer = this.signupForm.value.question;
+        this.user.answer = this.signupForm.value.questionAnswer;
         this.user.gender = this.signupForm.value.gender;
 
         this.signupForm.reset();
